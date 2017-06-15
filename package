@@ -1,1 +1,69 @@
-
+cdm→  componentDidMount: fn() { ... }
+   cdup→  componentDidUpdate: fn(pp, ps) { ... }
+     cs→  var cx = React.addons.classSet;
+    cwm→  componentWillMount: fn() { ... }
+    cwr→  componentWillReceiveProps: fn(np) { ... }
+    cwu→  componentWillUpdate: fn(np, ns) { ... }
+   cwun→  componentWillUnmount: fn() { ... }
+     cx→  cx({ ... })
+    fdn→  React.findDOMNode(...)
+    fup→  forceUpdate(...)
+    gdp→  getDefaultProps: fn() { return {...} }
+    gis→  getInitialState: fn() { return {...} } 
+    ism→  isMounted()
+  props→  this.props.
+     pt→  propTypes { ... }
+    rcc→  component skeleton
+   refs→  this.refs.
+    ren→  render: fn() { return ... }
+    scu→  shouldComponentUpdate: fn(np, ns) { ... }
+    sst→  this.setState({ ... })
+  state→  this.state.
+  
+  
+  
+  React-Router
+Trigger    Description
+link       react-router Link
+iroute     Router.IndexRoute
+ilink      Router.IndexLink
+redirect   react-router Redirect
+imrr       import react-router
+route      Router.Route
+router     Router.Route
+Trigger Description
+onbl    onBlur
+onch    onChange
+oncl    onClick
+oncm    onContextMenu
+onco    onCopy
+onct    onCut
+ondc    onDoubleClick
+onde    onDragEnd
+onden   onDragEnter
+ondex   onDragExit
+ondl    onDragLeave
+ondo    onDragOver
+onds    onDragStart
+onfo    onFocus
+ondr    onDrop
+onin    onInput
+onkd    onKeyDown
+onkp    onKeyPress
+onku    onKeyUp
+onmd    onMouseDown
+onme    onMouseEnter
+onmm    onMouseMove
+onml    onMouseLeave
+onmo    onMouseOut
+onmov   onMouseOver
+onmu    onMouseUp
+onpa    onPaste
+onsc    onScroll
+onsu    onSubmit
+ontc    onTouchCancel
+onte    onTouchEnd
+ontm    onTouchMove
+onts    onTouchStart
+rwc     React withContext
+onwh    onWheel
