@@ -67,3 +67,7 @@ ontm    onTouchMove
 onts    onTouchStart
 rwc     React withContext
 onwh    onWheel
+
+
+https://github.com/airbnb/javascript/tree/master/react#class-vs-reactcreateclass-vs-stateless
+https://github.com/planningcenter/react-patterns
