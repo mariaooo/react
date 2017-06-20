@@ -71,3 +71,6 @@ onwh    onWheel
 
 https://github.com/airbnb/javascript/tree/master/react#class-vs-reactcreateclass-vs-stateless
 https://github.com/planningcenter/react-patterns
+
+https://github.com/css-modules/css-modules
+https://github.com/webpack-contrib/css-loader#local-scope
