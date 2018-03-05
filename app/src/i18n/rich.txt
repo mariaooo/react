@@ -1,0 +1,66 @@
+	<strong>What is FX Alerts?</strong> <br>FX Alerts is a free
+					online service which monitors foreign exchange rates for you. You
+					can select a target exchange rate on each currency pair you choose
+					to monitor. When the target rate for your specified currency is
+					reached, we will send you an email to let you know. <br> <strong>Who
+						is FX Alerts provided by?</strong> <br>HSBC Bank Middle East Limited
+					provides FX Alerts to you, but we may use third party service
+					providers to operate the service or part of it on our behalf.
+					References to "HSBC", "we" or "us" in these Terms and Conditions
+					mean HSBC Bank Middle East Limited. <br> <strong>What
+						do I need in order to use FX Alerts?</strong> <br>In order to use FX
+					Alerts, you must have the ability to access the internet. You will
+					need to register for Personal Internet Banking and provide us with
+					a valid email address. Please ensure the latest email address we
+					have in our files is your most up-to-date email address before
+					using FX Alerts. <br> <strong>How do I register for
+						FX Alerts?</strong> <br>To register for FX Alerts, you need to
+					register for Personal Internet Banking. There is no separate
+					registration process for FX Alerts. To set up an alert please click
+					on the FX Rates and Alerts tab. <br> <strong>I
+						received an alert and I want to carry out a FX transaction. What
+						should I do?</strong> <br>Please note an alert provides indicative and
+					delayed rates only. These rates should not be relied upon in
+					isolation and may not be the same rate that will be used for your
+					transaction. In order to make an FX transaction you may use the
+					Money Transfer service within Personal Internet Banking. The rate
+					applicable to your transaction will be provided before you confirm
+					your transaction. <br> <strong>Do any other terms and
+						conditions apply?</strong> <br>Our HSBC Personal Banking General Terms
+					and Conditions, Personal Internet Banking Terms and Conditions and
+					product terms and conditions continue to apply in addition to these
+					Terms and Conditions. <br> <strong>How long are FX
+						Alerts active?</strong> <br>FX Alerts will be de-activated
+					automatically in 15 days from the date of creation of that
+					particular alert. <br> <strong>What happens if there
+						is a delay?</strong> <br>We will endeavour to provide you with FX
+					Alerts in a timely manner, however please note that the
+					availability and proper functioning of FX Alerts depends on a
+					number of circumstances including but not limited to location,
+					proper functioning of hardware and software. There will be a delay
+					between the time the rate you have designated is reached and when
+					the alert is issued and (ii) the time we send the alert and the
+					receipt of the alert by you. We will not be responsible or liable
+					in any way if there is a delay or failure by us to send an FX
+					Alert. <br> <strong>What if the alert is incorrect?</strong> <br>We
+					will not be responsible or liable for the reliability, timeliness,
+					or accuracy of FX Alerts. No explicit or implicit warranties of
+					accuracy or timeliness is made by us in relation to FX Alerts. We
+					accept no liability for any loss or damage arising from any errors,
+					inaccuracies, delays, omissions or any actions taken by you in
+					reliance on a FX Alert. <br> <strong>Can you
+						discontinue or suspend FX Alerts?</strong> <br>Yes, we may need to
+					discontinue or suspend FX Alerts and we may do this immediately for
+					any reason. We will try to provide you with advance notice if this
+					happens. <br> <strong>Can we vary these Terms and
+						Conditions?</strong> <br>Yes, we may vary these Terms and Conditions.
+					If we do so, we will upload the latest version on our website and
+					by continuing to use FX Alerts you will be deemed to have accepted
+					the latest version. If you do not agree to the Terms and Conditions
+					do not use FX Alerts. By using FX Alerts you agree to be bound by
+					these Terms and Conditions. <br> <strong>What happens
+						if we have a dispute in relation to FX Alerts?</strong> <br>These
+					Terms and Conditions shall be subject to the applicable laws of the
+					United Arab Emirates and all disputes shall be referred to the
+					non-DIFC Courts of Dubai or the Federal Courts of the United Arab
+					Emirates (as applicable).

@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "env",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "add-module-exports",
+    "transform-decorators-legacy",
+    "transform-runtime"
+  ]
+}

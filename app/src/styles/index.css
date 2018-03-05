@@ -1,0 +1,38 @@
+body {
+  margin:0;
+  badding:0;
+  background: #e8e8e8;
+  height: 100%;
+}
+
+div {
+  margin: 0px 0px;
+  padding:  0px 0px;
+  font-family: "Univers 65 Bold",Arial;
+  text-align: left;
+}
+
+#root {
+  width: 980px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 100px; 
+}
+
+/*
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+    color: #000;
+    font-weight: bold;
+    clear: left;
+
+}
+
+
+.h2, h2, h3 {
+    font-family: "Univers 65 Bold",Arial;
+    font-size: 1.5em;
+    line-height: 35px;
+    padding-top: 15px;	
+    -webkit-margin-before: 0em;
+}
+*/
