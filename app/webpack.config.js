@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const path = require('path');
 const root = path.resolve(__dirname);
@@ -17,18 +18,19 @@ module.exports = {
       "jquery",
       "react",
       "react-router",
-      "react-router-dom",
       "react-router-redux",
       "redux",
+      "numeral",
+      "moment",
       "redux-saga",
-      "whatwg-fetch"
+      "whatwg-fetch",
+      "prop-types"
     ],
   },
 
   output: {
     path: dist,
-    filename: `[name].[hash].js`,
-    chunkFilename: `[name].chunk.js`,
+    filename: `[name].js`,
   },
 
   devServer: {
@@ -49,7 +51,10 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        loader: 'style-loader!css-loader'
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader"
+        })
       },
       {
         test: /\.less$/,
@@ -106,7 +111,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'FX Order Watching',
+      title: 'FX Alert',
       filename: 'index.html',
       favicon: root + '/public/favicon.ico',
       template: root + '/public/index.html',
@@ -127,7 +132,7 @@ module.exports = {
     }),
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor', 'mainifest'],
-      filename: '[name].[hash].js'
+      filename: '[name].js'
     }),
     new ExtractTextPlugin({
       filename: "style.css",
@@ -136,6 +141,22 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: `server/`,
+        to: dist,
+      },
+    ]),
+    new webpack.optimize.UglifyJsPlugin({
+      uglifyOptions: {
+        compress: {
+          drop_console: true,
+        },
+        output: {
+          comments: 'all',
+        },
       }
     })
   ]
