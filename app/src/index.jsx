@@ -1,27 +1,20 @@
-import React from 'react';
+import 'babel-polyfill';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Router, browserHistory, hashHistory } from 'react-router';
+import { syncHistoryWithStore } from 'react-router-redux';
 import { Provider } from 'react-redux';
-import { Route } from 'react-router';
-import { ConnectedRouter } from 'react-router-redux';
-import createHistory from 'history/createBrowserHistory';
 import configureStore from './store/index';
-import App from './components/app';
+import { createRoutes } from './routes';
 
 const store = configureStore();
-
-const history = createHistory();
-
-// Now you can dispatch navigation actions from anywhere!
-// store.dispatch(push('/foo'))
+const routes = createRoutes(store);
+const history = syncHistoryWithStore(browserHistory, store);
 
 ReactDOM.render(
   <Provider store={store} >
     { /* ConnectedRouter will use the store from Provider automatically */}
-    <ConnectedRouter history={history}>
-      <div>
-        <Route exact path="/" component={App} />
-      </div>
-    </ConnectedRouter>
+    <Router history={history} routes={routes} />
   </Provider>,
   document.getElementById('root'),
 );
