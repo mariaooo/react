@@ -2,14 +2,16 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const path = require('path');
 const root = path.resolve(__dirname);
+const public = path.resolve(root, 'public');
 const src = path.resolve(root, 'src');
 const dist = path.resolve(root, 'dist');
 
 module.exports = {
-  devtool: 'inline-source-map',
+  devtool: '#inline-source-map',
   entry: {
     main: src + '/index.jsx',
     vendor: [
@@ -18,11 +20,13 @@ module.exports = {
       "jquery",
       "react",
       "react-router",
-      "react-router-dom",
       "react-router-redux",
       "redux",
+      "numeral",
+      "moment",
       "redux-saga",
-      "whatwg-fetch"
+      "whatwg-fetch",
+      "prop-types"
     ],
   },
 
@@ -51,7 +55,10 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        loader: 'style-loader!css-loader'
+        use: ExtractTextPlugin.extract({
+          fallback: "style-loader",
+          use: "css-loader"
+        })
       },
       {
         test: /\.less$/,
@@ -108,10 +115,10 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'FX Order Watching',
+      title: 'demo',
       filename: 'index.html',
-      favicon: root + '/public/favicon.ico',
-      template: root + '/public/index.html',
+      // favicon: `${public}/favicon.ico`,
+      template: `${public}/index.html`,
       inject: 'body',
       cache: false,
       showErrors: true,
@@ -139,6 +146,15 @@ module.exports = {
       'process.env': {
         'NODE_ENV': JSON.stringify('development')
       }
-    })
+    }),
+    new webpack.LoaderOptionsPlugin({
+      debug: true
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: `server/`,
+        to: dist,
+      },
+    ]),
   ]
 };
