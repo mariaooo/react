@@ -1,0 +1,14 @@
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { appDemo } from '../actions/app';
+import { App } from '../components';
+
+const mapStateToProps = state => ({
+  // app: state.app,
+});
+
+const mapDispathcToProps = dispatch => bindActionCreators({
+  appDemo
+}, dispatch);
+
+export default connect(mapStateToProps, mapDispathcToProps)(App);
